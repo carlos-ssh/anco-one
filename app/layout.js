@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import localFont from "next/font/local";
 import NavbarComponent from "@/components/header/NavbarComponent";
 import "./globals.css";
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         className={`${anconeDisplay.variable} ${anconeText.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
